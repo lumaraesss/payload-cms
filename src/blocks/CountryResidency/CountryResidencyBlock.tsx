@@ -46,12 +46,11 @@ export const CountryResidencyBlock: Block = {
    name: 'country',
    type: 'group',
    fields: [
-    { ...inputLabelField, defaultValue: 'Country' },
-    { ...inputWidthField, defaultValue: '100%' },
+    { ...inputLabelField },
+    { ...inputWidthField },
     {
      ...placeholderField,
      label: 'Country Placeholder',
-     defaultValue: 'Select a country',
     },
     {
      name: 'options',
@@ -77,9 +76,9 @@ export const CountryResidencyBlock: Block = {
    name: 'postalCode',
    type: 'group',
    fields: [
-    { ...inputLabelField, defaultValue: 'Postal Code' },
-    { ...inputWidthField, defaultValue: '100%' },
-    { ...placeholderField, label: 'Postal Code Placeholder', defaultValue: '0000-000' },
+    { ...inputLabelField },
+    { ...inputWidthField },
+    { ...placeholderField, label: 'Postal Code Placeholder' },
     { ...requiredField },
    ],
   },
@@ -87,9 +86,9 @@ export const CountryResidencyBlock: Block = {
    name: 'locality',
    type: 'group',
    fields: [
-    { ...inputLabelField, defaultValue: 'Locality' },
-    { ...inputWidthField, defaultValue: '100%' },
-    { ...placeholderField, label: 'Locality Placeholder', defaultValue: 'Enter locality' },
+    { ...inputLabelField },
+    { ...inputWidthField },
+    { ...placeholderField, label: 'Locality Placeholder' },
     { ...requiredField },
    ],
   },
@@ -98,8 +97,8 @@ export const CountryResidencyBlock: Block = {
    type: 'group',
    fields: [
     { ...inputLabelField, defaultValue: 'Address' },
-    { ...inputWidthField, defaultValue: '100%' },
-    { ...placeholderField, label: 'Address Placeholder', defaultValue: 'Enter address' },
+    { ...inputWidthField },
+    { ...placeholderField, label: 'Address Placeholder' },
     { ...requiredField },
    ],
   },
@@ -107,10 +106,13 @@ export const CountryResidencyBlock: Block = {
    name: 'numberLot',
    type: 'group',
    fields: [
-    { ...inputLabelField, defaultValue: 'Number / Lot' },
-    { ...inputWidthField, defaultValue: '100%' },
-    { ...placeholderField, label: 'Number / Lot Placeholder', defaultValue: 'Enter number or lot' },
-    { ...requiredField },
+    { ...inputLabelField },
+    { ...inputWidthField },
+    { ...placeholderField, label: 'Number / Lot Placeholder' },
+    {
+     ...requiredField
+
+    },
    ],
   },
   {
@@ -119,7 +121,7 @@ export const CountryResidencyBlock: Block = {
    fields: [
     { ...inputLabelField, defaultValue: 'Floor' },
     { ...inputWidthField, defaultValue: '100%' },
-    { ...placeholderField, label: 'Floor Placeholder', defaultValue: 'Enter floor (optional)' },
+    { ...placeholderField, label: 'Floor Placeholder' },
     { ...requiredField, defaultValue: false },
    ],
   },
@@ -129,7 +131,7 @@ export const CountryResidencyBlock: Block = {
    fields: [
     { ...inputLabelField, defaultValue: 'Door' },
     { ...inputWidthField, defaultValue: '100%' },
-    { ...placeholderField, label: 'Door Placeholder', defaultValue: 'Enter door (optional)' },
+    { ...placeholderField, label: 'Door Placeholder' },
     { ...requiredField, defaultValue: false },
    ],
   },

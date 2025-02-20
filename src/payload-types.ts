@@ -651,6 +651,13 @@ export interface Form {
             blockType: 'phoneNumber';
           }
         | {
+            maintitle?: string | null;
+            subtitle?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'requestidentificationtitle';
+          }
+        | {
             simulatePreload?: boolean | null;
             id?: string | null;
             blockName?: string | null;
@@ -1652,6 +1659,14 @@ export interface FormsSelect<T extends boolean = true> {
               required?: T;
               readOnly?: T;
               searchable?: T;
+              id?: T;
+              blockName?: T;
+            };
+        requestidentificationtitle?:
+          | T
+          | {
+              maintitle?: T;
+              subtitle?: T;
               id?: T;
               blockName?: T;
             };

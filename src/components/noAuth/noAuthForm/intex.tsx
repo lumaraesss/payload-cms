@@ -119,7 +119,7 @@ export const NoAuthForm: FC<Props> = ({ form }) => {
            <div>
             <Button type="submit" className="w-full md:w-auto bg-blue-600 text-white">
              {form.submitButtonLabel}
-             <Icon name="agora-line-arrow-right-circle" className="fill-yellow-900" />
+             {/* <Icon name="agora-line-arrow-right-circle" className="fill-yellow-900" /> */}
             </Button>
            </div>
           </div>

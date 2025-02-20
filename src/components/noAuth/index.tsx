@@ -25,7 +25,6 @@ export async function NoAuthPayload() {
 
 
  const currForm = data?.docs?.[0]
- console.log("Dados do formulário selecionado:", currForm)
 
  if (!currForm) return notFound()
 

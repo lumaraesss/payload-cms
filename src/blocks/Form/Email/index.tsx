@@ -24,6 +24,7 @@ export const Email: React.FC<
         label={label}
         required={requiredFromProps}
         hasFeedback={true}
+        className="w-full"
         placeholder='Indique o seu email'
         feedbackState={'danger'}
         feedbackText={errors[name]?.message?.toString()}

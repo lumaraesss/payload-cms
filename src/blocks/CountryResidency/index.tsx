@@ -65,7 +65,7 @@ export const CountryResidencyForm: React.FC<AddressFormProps> = ({
 
  return (
   <div>
-   <div className="mb-4 max-w-[350px]">
+   <div className="mb-4">
     <InputSelect
      id="country"
      label="País de residência"
@@ -152,17 +152,17 @@ export const CountryResidencyForm: React.FC<AddressFormProps> = ({
       </div>
      </>
     ) : (
-     <div >
-      <div className="grid grid-cols-1">
+     <div className="w-full">
+      <div className="grid  grid-cols-1">
        <InputText
         id="address"
         label={address.label}
+        className='w-full'
         placeholder={address.placeholder}
         {...register('address', { required: true })}
         hasError={!!errors.address}
         feedbackState="danger"
         feedbackText="Obrigatório preencher 'Morada'"
-        className="min-w-[850px]"
        />
       </div>
      </div>

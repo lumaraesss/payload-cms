@@ -15,6 +15,7 @@ import { Number } from './Number'
 import { PhoneNumber } from './PhoneNumber'
 import { PreLoadExample1 } from './PreloadExample1'
 import { RadioButtons } from './RadioButtonGroup'
+import RequestIdentificationTitle from './RequestIdentificationTitle'
 import { Select } from './Select'
 import { SelectWithApi } from './SelectWithAPI'
 import { State } from './State'
@@ -35,6 +36,7 @@ export const fields = {
   text: Text,
   textarea: Textarea,
   nif: Nif,
+  requestidentificationtitle: RequestIdentificationTitle,
   selectWithApi: SelectWithApi,
   customtext: Text,
   address: Address,
