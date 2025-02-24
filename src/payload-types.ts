@@ -690,6 +690,20 @@ export interface Form {
             blockType: 'group';
           }
         | {
+            accessCode: {
+              placeholder: string;
+              label: string;
+            };
+            captcha: {
+              placeholder: string;
+              label: string;
+              imageSrc: number | Media;
+            };
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'birthconsultation';
+          }
+        | {
             label?: string | null;
             id?: string | null;
             blockName?: string | null;
@@ -1640,6 +1654,25 @@ export interface FormsSelect<T extends boolean = true> {
                 | T
                 | {
                     id?: T;
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        birthconsultation?:
+          | T
+          | {
+              accessCode?:
+                | T
+                | {
+                    placeholder?: T;
+                    label?: T;
+                  };
+              captcha?:
+                | T
+                | {
+                    placeholder?: T;
+                    label?: T;
+                    imageSrc?: T;
                   };
               id?: T;
               blockName?: T;

@@ -1,4 +1,5 @@
 import { Address } from './Address'
+import { BirthConsultation } from './BirthConsultation'
 import { Birthdate } from './Birthdate'
 import { Birthplace } from './Birthplace'
 import { Checkbox } from './Checkbox'
@@ -45,5 +46,6 @@ export const fields = {
   birthplace: Birthplace,
   customtextarea: Textarea,
   title: Title,
+  birthconsultation: BirthConsultation,
   identificationData: IdentificationData,
 }
